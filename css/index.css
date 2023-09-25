@@ -6,8 +6,19 @@ body {
 
 .divContent {
   width: 1400px;
+  box-shadow: 0px 0px 12px 4px black;
 }
 
+.profile {
+  justify-content: center;
+  margin-top: 70px;
+  overflow: visible;
+}
+.ourHistory {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
 h3,
 h4 {
   font-weight: bold;
@@ -123,4 +134,18 @@ h4 {
 #fullscreen-image:hover {
   transform: scale(1.05);
   /* Aumenta el tamaño al hacer hover */
+}
+
+@media (min-width: 900px) and (max-width: 1080px) {
+  .divContent {
+    width: 100%;
+  }
+  .profile {
+    overflow: scroll;
+  }
+  .ourHistory {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
