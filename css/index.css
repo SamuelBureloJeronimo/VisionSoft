@@ -7,6 +7,17 @@ body {
 .divContent {
   width: 1400px;
   box-shadow: 0px 0px 12px 4px black;
+  overflow: hidden;
+}
+
+.zoomImage {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoomImage:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.04);
+  background-color: #f0f0f0;
 }
 
 .profile {
@@ -14,11 +25,13 @@ body {
   margin-top: 70px;
   overflow: visible;
 }
+
 .ourHistory {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
+
 h3,
 h4 {
   font-weight: bold;
@@ -140,9 +153,11 @@ h4 {
   .divContent {
     width: 100%;
   }
+
   .profile {
     overflow: scroll;
   }
+
   .ourHistory {
     display: flex;
     align-items: center;
