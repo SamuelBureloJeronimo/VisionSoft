@@ -3,11 +3,18 @@ body {
   justify-content: center;
   width: 100%;
 }
-
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .divContent {
   width: 1400px;
   box-shadow: 0px 0px 12px 4px black;
   overflow: hidden;
+}
+.perfH {
+  height: 850px;
 }
 
 .boxGallery {
@@ -18,8 +25,8 @@ body {
 }
 
 .box-CardPort {
-  width: 400px;
-  height: 450px;
+  width: 25%;
+  min-height: 450px;
   box-shadow: 5px 5px 12px 2px rgb(0, 86, 9);
   margin: 1.5%;
 }
@@ -43,7 +50,7 @@ body {
 }
 
 .github:hover {
-  background-color: black;
+  background-color: rgb(211, 211, 211);
 }
 
 .zoomImage {
@@ -189,14 +196,36 @@ h4 {
   .divContent {
     width: 100%;
   }
+  .box-CardPort {
+    width: 40%;
+  }
+
+  .boxGallery {
+    width: 100%;
+  }
+  .perfH {
+    height: 100%;
+  }
 
   .profile {
     overflow: scroll;
+  }
+  .imgQuetzal {
+    display: none;
+  }
+  .img-history {
+    width: 100%;
+  }
+  .img-history img {
+    width: 400px;
   }
 
   .ourHistory {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  .nameLogo {
+    display: none;
   }
 }
