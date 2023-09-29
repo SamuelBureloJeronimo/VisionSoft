@@ -4,6 +4,17 @@ body {
   width: 100%;
 }
 
+header button {
+  display: none;
+}
+
+.imgQuetzal {
+  position: relative;
+  margin-top: -200px;
+  margin-bottom: -250px;
+  height: 300px;
+}
+
 .conteiner {
   display: flex;
   flex-wrap: wrap;
@@ -32,6 +43,12 @@ body {
   min-height: 450px;
   box-shadow: 5px 5px 12px 2px rgb(0, 86, 9);
   margin: 1.5%;
+}
+
+.responsiveBtn {
+  display: none;
+  width: 45%;
+  justify-content: right;
 }
 
 .box-CardPort img {
@@ -86,7 +103,6 @@ body {
 .profile {
   justify-content: center;
   margin-top: 70px;
-  overflow: visible;
 }
 
 .ourHistory {
@@ -212,7 +228,43 @@ h4 {
   /* Aumenta el tamaño al hacer hover */
 }
 
-@media (min-width: 900px) and (max-width: 1080px) {
+@media (min-width: 501px) and (max-width: 849px) {
+  .divContent {
+    width: 100%;
+  }
+
+  .box-CardPort {
+    width: 60%;
+  }
+
+  .boxGallery {
+    width: 100%;
+  }
+
+  .perfH {
+    height: 100%;
+  }
+
+  .imgQuetzal {
+    display: none;
+  }
+
+  .img-history {
+    width: 100%;
+  }
+
+  .img-history img {
+    width: 400px;
+  }
+
+  .ourHistory {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1080px) {
   .divContent {
     width: 100%;
   }
@@ -227,10 +279,6 @@ h4 {
 
   .perfH {
     height: 100%;
-  }
-
-  .profile {
-    overflow: scroll;
   }
 
   .imgQuetzal {
@@ -256,17 +304,58 @@ h4 {
   }
 }
 
-@media (min-width: 0px) and (max-width: 899px) {
+@media (min-width: 0px) and (max-width: 500px) {
   .divContent {
     width: 100%;
   }
 
   body {
-    width: 900px;
+    width: 500px;
+  }
+
+  #carouselExampleIndicators {
+    display: none;
+  }
+
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: visible;
+  }
+
+  .hexPerfil {
+    width: 48%;
+  }
+
+  header {
+    overflow: hidden;
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  header button {
+    display: block;
+  }
+
+  .navPrincipal {
+    display: none;
+    position: relative;
+    width: 100%;
+  }
+
+  .navPrincipal ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navPrincipal ul li {
+    text-align: center;
+    height: 60px;
   }
 
   .box-CardPort {
-    width: 40%;
+    width: 80%;
   }
 
   .boxGallery {
@@ -299,7 +388,11 @@ h4 {
     flex-direction: column;
   }
 
-  .nameLogo {
-    display: none;
+  .logoImg {
+    width: 60px;
+  }
+
+  .responsiveBtn {
+    display: flex;
   }
 }
