@@ -19,22 +19,27 @@
     <div class="divContent">
         <!-- MENU -->
         <header class="d-flex flex-wrap align-items-center justify-content-center
-    justify-content-md-between border-bottom" style="background:linear-gradient(170deg,   #0c640e  ,  #1b1e1c);;">
+    justify-content-md-between border-bottom" style="background:linear-gradient(170deg,   #0c640e  ,  #1b1e1c);">
 
             <!-- LOGO Y NOMBRE -->
-            <div class="col-md-3 mb-md-0">
+            <div class="d-flex col-md-3 mb-md-0" style="flex-direction: row;">
                 <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none align-items-center">
-                    <img src="img/logo1.3.png" class="img-thumbnail ms-3" width="80px" alt=""
+                    <img src="img/logo1.3.png" class="img-thumbnail ms-3 logoImg" width="80px" alt=""
                         style="background-color: transparent; border: none;">
                     <h4 class="m-0 ms-3 nameLogo" style="color:#0df74d">VISIONSOFT</h4>
                 </a>
             </div>
-
+            <div class="responsiveBtn" id="btnMenu">
+                <button style="background-color: transparent; border: none;"><img src="img/menu-de-puntos.png"
+                        height="40px" style="margin: 5px;"></button>
+            </div>
             <!-- LINKS -->
-            <nav>
+            <nav class="navPrincipal" id="navPrincipal">
                 <ul class="col-12 col-md-auto nav justify-content-center mb-md-0 me-5">
-                    <li><a href="index.html" class="nav-link px-2 link-light">HOME</a></li>
-                    <li><a href="portfolio.html" class="nav-link px-2 link-light">PORTFOLIO</a></li>
+                    <li><a href="index.html" class="nav-link px-2 link-light">HOME</a>
+                    </li>
+                    <li><a href="portfolio.html" class="nav-link px-2 link-light">PORTFOLIO</a>
+                    </li>
                     <li><a href="gallery.html"
                             class="nav-link px-2 link-dark seleccionado bg-white rounded p-2">GALLERY</a></li>
                     <li><a href="about.html" class="nav-link px-2 link-light">ABOUT US</a></li>
@@ -58,6 +63,7 @@
         </footer>
         <!-- FIN FOOTER -->
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
     </div>
 </body>
 
