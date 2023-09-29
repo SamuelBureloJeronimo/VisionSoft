@@ -19,22 +19,26 @@
   <div class="divContent">
     <!-- MENU -->
     <header class="d-flex flex-wrap align-items-center justify-content-center
-    justify-content-md-between border-bottom" style="background:linear-gradient(170deg,   #0c640e  ,  #1b1e1c);;">
+    justify-content-md-between border-bottom" style="background:linear-gradient(170deg,   #0c640e  ,  #1b1e1c);">
 
       <!-- LOGO Y NOMBRE -->
-      <div class="col-md-3 mb-md-0">
+      <div class="d-flex col-md-3 mb-md-0" style="flex-direction: row;">
         <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none align-items-center">
-          <img src="img/logo1.3.png" class="img-thumbnail ms-3" width="80px" alt=""
+          <img src="img/logo1.3.png" class="img-thumbnail ms-3 logoImg" width="80px" alt=""
             style="background-color: transparent; border: none;">
           <h4 class="m-0 ms-3 nameLogo" style="color:#0df74d">VISIONSOFT</h4>
         </a>
       </div>
-
+      <div class="responsiveBtn" id="btnMenu">
+        <button style="background-color: transparent; border: none;"><img src="img/menu-de-puntos.png" height="40px"
+            style="margin: 5px;"></button>
+      </div>
       <!-- LINKS -->
-      <nav>
+      <nav class="navPrincipal" id="navPrincipal">
         <ul class="col-12 col-md-auto nav justify-content-center mb-md-0 me-5">
           <li><a href="index.html" class="nav-link px-2 link-dark seleccionado bg-white rounded p-2">HOME</a></li>
-          <li><a href="portfolio.html" class="nav-link px-2 link-light">PORTFOLIO</a></li>
+          <li><a href="portfolio.html" class="nav-link px-2 link-light">PORTFOLIO</a>
+          </li>
           <li><a href="gallery.html" class="nav-link px-2 link-light">GALLERY</a></li>
           <li><a href="about.html" class="nav-link px-2 link-light">ABOUT US</a></li>
           <li><a href="contact.html" class="nav-link px-2 link-light">CONTACT US</a></li>
@@ -75,31 +79,29 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <img src="img/resplendent-quetzal.png" class="imgQuetzal"
-      style="position: relative; margin-top: -200px; margin-bottom: -250px;" height="300px">
+    <img src="img/resplendent-quetzal.png" class="imgQuetzal">
     <!-- FIN CAROUSEL -->
-    <div style="padding: 30px;">
+    <div style=" padding: 30px;">
       <!-- PERFIL DE EQUIPO -->
       <h3 class="text-center">Who are the VisionSoft team?</h4>
-        <div class="profile d-flex justify-content-center">
+        <div class="profile d-flex justify-content-center" style="overflow: visible;">
           <!-- Hexágono 1 -->
           <div style="height: 360px;">
-            <div style="text-align: center;">
+            <div class="hexPerfil" style="text-align: center;">
               <img src="img/integrantes/hexagon/Sam1.png" height="150px">
               <h4>Samuel</h4>
             </div>
           </div>
 
           <!-- Hexágono 2 -->
-          <div style="display: flex; height: 360px; align-items: center; margin: 5px;">
+          <div class="hexPerfil" style="display: flex; height: 360px; align-items: center; margin: 5px;">
             <div style="text-align: center;">
               <img src="img/integrantes/hexagon/Julian1.png" height="150px">
               <h4>Julian</h4>
             </div>
           </div>
-
           <!-- Hexágono 3 -->
-          <div style="height: 360px;">
+          <div class="hexPerfil" style="height: 360px;">
             <div style="text-align: center;">
               <img src="img/integrantes/hexagon/Rodo1.png" height="150px">
               <h4>Rodolfo</h4>
@@ -107,15 +109,14 @@
           </div>
 
           <!-- Hexágono 4 -->
-          <div style="display: flex; height: 360px; align-items: center; margin: 5px;">
+          <div class="hexPerfil" style="display: flex; height: 360px; align-items: center; margin: 5px;">
             <div style="text-align: center;">
               <img src="img/integrantes/hexagon/Naye1.png" height="150px">
               <h4>Nayeli</h4>
             </div>
           </div>
-
           <!-- Hexágono 5 -->
-          <div style="height: 360px;">
+          <div class="hexPerfil" style="height: 360px;">
             <div style="text-align: center;">
               <img src="img/integrantes/hexagon/Erick1.png" height="150px">
               <h4>Erick</h4>
@@ -123,9 +124,9 @@
           </div>
 
           <!-- Hexágono 6 -->
-          <div style="display: flex; height: 360px; align-items: center; margin: 5px;">
+          <div class="hexPerfil" style="display: flex; height: 360px; align-items: center; margin: 5px;">
             <div style="text-align: center;">
-              <img src="img/integrantes/hexagon/Sam1.png" height="150px">
+              <img src="img/integrantes/hexagon/freddy1.png" height="150px">
               <h4>Freddy</h4>
             </div>
           </div>
@@ -222,6 +223,7 @@
 
     <!-- Bootstrap JS-->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
   </div>
 </body>
 
