@@ -36,26 +36,38 @@
             <!-- LINKS -->
             <nav class="navPrincipal" id="navPrincipal">
                 <ul class="col-12 col-md-auto nav justify-content-center mb-md-0 me-5">
-                    <li><a href="index.html" class="nav-link px-2 link-light">HOME</a>
+                    <li><a id="HOME" href="index.html" class="nav-link px-2 link-light">HOME</a>
                     </li>
-                    <li><a href="portfolio.html" class="nav-link px-2 link-light">PORTFOLIO</a>
+                    <li><a id="PORTFOLIO" href="portfolio.html" class="nav-link px-2 link-light">PORTFOLIO</a>
                     </li>
-                    <li><a href="gallery.html"
+                    <li><a id="GALLERY" href="gallery.html"
                             class="nav-link px-2 link-dark seleccionado bg-white rounded p-2">GALLERY</a></li>
-                    <li><a href="about.html" class="nav-link px-2 link-light">ABOUT US</a></li>
-                    <li><a href="contact.html" class="nav-link px-2 link-light">CONTACT US</a></li>
+                    <li><a id="ABOUT_US" href="about.html" class="nav-link px-2 link-light">ABOUT_US</a></li>
+                    <li><a id="CONTACT_US" href="contact.html" class="nav-link px-2 link-light">CONTACT_US</a></li>
+                    <li>
+                        <div class="btn-group" id="lenguajes">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                data-bs-auto-close="true" aria-expanded="false" id="btnLeng" style="color: white;">
+                                Español
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" onclick="clickLenguaje('Español')">Español
+                                        <img src="img/idiomas/MEXICO.jpg" height="10px"></a>
+                                </li>
+                                <li><a class="dropdown-item" onclick="clickLenguaje('Ingles')">Ingles
+                                        <img src="img/idiomas/USA.jpg" height="10px"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </header>
         <!-- FIN MENU -->
         <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; padding: 10px;">
             <img src="img/Team SpartanCode/2023-09-16.jpg" class="boxGallery perfH">
-            <img src="img/Team SpartanCode/virtual2.png" class="boxGallery">
             <img src="img/Team SpartanCode/virtual1.jpg" class="boxGallery">
             <img src="img/Team SpartanCode/2023-09-23.jpg" class="boxGallery perfH">
-            <img src="img/Team SpartanCode/2023-04-29.jpg" class="boxGallery perfH">
-            <img src="img/Team SpartanCode/2023-05-06.jpg" class="boxGallery">
-            <img src="img/Team SpartanCode/2023-05-07.jpg" class="boxGallery perfH">
         </div>
         <!-- FOOTER -->
         <footer class=" text-white text-center py-3" style="background-color: #0d4b0f ;">
