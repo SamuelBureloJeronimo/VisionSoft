@@ -36,12 +36,29 @@
       <!-- LINKS -->
       <nav class="navPrincipal" id="navPrincipal">
         <ul class="col-12 col-md-auto nav justify-content-center mb-md-0 me-5">
-          <li><a href="index.html" class="nav-link px-2 link-dark seleccionado bg-white rounded p-2">HOME</a></li>
-          <li><a href="portfolio.html" class="nav-link px-2 link-light">PORTFOLIO</a>
+          <li><a id="HOME" href="index.html" class="nav-link px-2 link-dark seleccionado bg-white rounded p-2"></a>
           </li>
-          <li><a href="gallery.html" class="nav-link px-2 link-light">GALLERY</a></li>
-          <li><a href="about.html" class="nav-link px-2 link-light">ABOUT US</a></li>
-          <li><a href="contact.html" class="nav-link px-2 link-light">CONTACT US</a></li>
+          <li><a id="PORTFOLIO" href="portfolio.html" class="nav-link px-2 link-light"></a>
+          </li>
+          <li><a id="GALLERY" href="gallery.html" class="nav-link px-2 link-light"></a></li>
+          <li><a id="ABOUT_US" href="about.html" class="nav-link px-2 link-light"></a></li>
+          <li><a id="CONTACT_US" href="contact.html" class="nav-link px-2 link-light"></a></li>
+          <li>
+            <div class="btn-group" id="lenguajes">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                aria-expanded="false" id="btnLeng" style="color: white;">
+                Español
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" onclick="clickLenguaje('Español')">Español
+                    <img src="img/idiomas/MEXICO.jpg" height="10px"></a>
+                </li>
+                <li><a class="dropdown-item" onclick="clickLenguaje('Ingles')">Ingles
+                    <img src="img/idiomas/USA.jpg" height="10px"></a>
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -83,7 +100,7 @@
     <!-- FIN CAROUSEL -->
     <div style=" padding: 30px;">
       <!-- PERFIL DE EQUIPO -->
-      <h3 class="text-center">Who are the VisionSoft team?</h4>
+      <h3 class="text-center" id="WhoAreTeam">Who are the VisionSoft team?</h4>
         <div class="profile d-flex justify-content-center" style="overflow: visible;">
           <!-- Hexágono 1 -->
           <div style="height: 360px;">
@@ -137,7 +154,7 @@
         <div class="container-fluid">
           <!-- SERVICES -->
           <hr>
-          <h3 class="text-center my-4">Services</h3>
+          <h3 class="text-center my-4" id="servicesH3">Services</h3>
           <div class="row -flex align-items-center justify-content-center text-center">
             <div class="col-sm-3">
               <img src="img/SS_1.png" style="overflow: hidden; border-radius: 5px;" class="rounded img-fluid zoom-image"
@@ -166,7 +183,7 @@
           <br>
           <br>
           <!-- OURS SKILLS -->
-          <h3 class="text-center my-4">Ours Skills</h3>
+          <h3 class="text-center my-4" id="skillsH3">Ours Skills</h3>
           <div class="row d-flex align-items-center justify-content-center text-center">
             <div class="col-sm-3">
               <img src="img/react.png" class="rounded img-fluid zoom-image">
@@ -195,8 +212,9 @@
           <!-- OUR HISTORY -->
           <div class="ourHistory">
             <div class="col-md-6">
-              <h3>Our History</h3>
-              <p style="font-size: 20px; color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">It
+              <h3 id="ourHistoryH3">Our History</h3>
+              <p id="p1_OurHistory"
+                style="font-size: 20px; color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">It
                 all started with a simple idea "to work in what we like," most of the members experienced
                 what is the sacrifice of working in something totally different from the technology area, and
                 end up in despair in a place where our effort is not valued nor the hours and hours of effort.
