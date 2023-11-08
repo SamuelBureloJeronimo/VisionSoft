@@ -31,7 +31,10 @@ const ourHistoryH3 = document.getElementById("ourHistoryH3");
 const p1_OurHistory = document.getElementById("p1_OurHistory");
 
 const btnLeng = document.getElementById("btnLeng");
-clickLenguaje("Español");
+let lsItem = localStorage.getItem("Idioma");
+if (lsItem != null)
+    clickLenguaje(lsItem);
+else clickLenguaje("Español");
 
 function clickLenguaje(element) {
     idiomaSelected = element;
@@ -50,6 +53,7 @@ function clickLenguaje(element) {
         ourHistoryH3.textContent = "Nuestra historia";
         p1_OurHistory.textContent = 'Todo comenzó con una simple idea "trabajar en lo que nos gusta" la mayoría de los miembros experimentamos lo que es el sacrificio de trabajar en algo totalmente diferente al área de tecnología, y terminar desesperados en un lugar donde no se valora nuestro esfuerzo ni las horas y horas de esfuerzo.' +
             "\n\nCon esto en mente, decidimos montar un negocio para que en el futuro pudiéramos trabajar en lo que nos gusta y ganarnos la vida dignamente.";
+        localStorage.setItem("Idioma", "Español");
         return;
     }
     if (idiomaSelected == "Ingles") {
@@ -65,6 +69,7 @@ function clickLenguaje(element) {
         ourHistoryH3.textContent = "Our History";
         p1_OurHistory.textContent = 'It all started with a simple idea "to work in what we like" most of the members experienced what is the sacrifice of working in something totally different from the technology area, and end up in despair in a place where our effort is not valued nor the hours and hours of effort.' +
             "\n\nWith this in mind, we decided to start a business so that in the future we could work in what\n we like and earn a decent living.";
+        localStorage.setItem("Idioma", "Ingles");
         return;
     }
 }
